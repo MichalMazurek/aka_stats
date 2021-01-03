@@ -51,7 +51,7 @@ Check out the usage guide here: [Usage.md](Usage.md)
 
 ## Prometheus formatters
 
-Information how to write a formatter is here: [PrometheusFormatters.md](PrometheusFormatters.md)
+Information how to write a formatter is here: [PrometheusFormatter.md](PrometheusFormatter.md)
 
 ## Optional Standalone HTTP API
 
