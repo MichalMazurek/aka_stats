@@ -1,5 +1,7 @@
 # Aka Stats
 
+[![GitHub license](https://img.shields.io/github/license/MichalMazurek/aka_stats)](https://github.com/MichalMazurek/aka_stats/blob/main/LICENSE)
+
 Aka (赤 - red in japanese) Stats.
 
 Unified module for keeping stats in Redis.
