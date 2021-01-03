@@ -1,0 +1,28 @@
+# This workflows will upload a Python Package using Twine when a release is created
+# For more information see: https://help.github.com/en/actions/language-and-framework-guides/using-python-with-github-actions#publishing-to-package-registries
+
+name: Upload Python Package
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  publish:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+    - name: Run image
+      uses: abatilo/actions-poetry@v2.0.0
+      with:
+          poetry-version: '1.x'
+    - name: Publish
+      run: |
+        poetry publish --build -u ${secret.PYPI_USERNAME} -p ${secret.PYPI_PASSWORD}
+        
