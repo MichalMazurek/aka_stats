@@ -4,7 +4,7 @@ Aka (赤 - red in japanese) Stats.
 
 Unified module for keeping stats in Redis.
 
-The goal is to have an easy way to measure an application, and then expose these metrics through an HTTP API,
+The goal is to have an easy way to measure an application, and then expose these metrics through a HTTP API,
 either to process it in some web ui, or expose it to Prometheus.
 
 ```python
