@@ -36,3 +36,5 @@ jobs:
     - name: Test with pytest
       run: |
         poetry run pytest tests/
+      env:
+        SKIP_E2E: 1
