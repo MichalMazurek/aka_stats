@@ -2,10 +2,18 @@
 line-length = 120
 [tool.poetry]
 name = "aka-stats"
-version = "21.1.3"
-description = ""
+version = "21.1.4"
+description = "Module for keeping metrics about your application in Redis. The goal is to have an easy way to measure an application, and then expose these metrics through a HTTP API, either to process it in some web ui, or expose it to Prometheus."
 authors = ["Michal Mazurek <mazurek.michal@gmail.com>"]
 packages = [{include="aka_stats"}]
+repository = "https://github.com/MichalMazurek/aka_stats"
+homepage = "https://github.com/MichalMazurek/aka_stats"
+classifiers = [
+	"Development Status :: 5 - Production/Stable",
+	"Topic :: Software Development :: Libraries :: Python Modules",
+]
+readme = "README.md"
+license = "MIT"
 
 [tool.portray]
 modules = ["aka_stats"]
