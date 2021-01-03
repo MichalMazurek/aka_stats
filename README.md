@@ -51,4 +51,4 @@ Information how to write a formatter is here: [PrometheusFormatters.md](Promethe
 
 ## Optional Standalone HTTP API
 
-Check out this guide here: [Included HTTP API](<Included HTTP API.md>)
+Check out this guide here: [Included HTTP API](<Included http api.md>)
