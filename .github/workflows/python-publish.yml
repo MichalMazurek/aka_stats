@@ -21,7 +21,7 @@ jobs:
     - name: Run image
       uses: abatilo/actions-poetry@v2.0.0
       with:
-          poetry-version: '1.x'
+          poetry-version: '1'
     - name: Publish
       run: |
         poetry publish --build -u ${secret.PYPI_USERNAME} -p ${secret.PYPI_PASSWORD}
