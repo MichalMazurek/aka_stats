@@ -2,7 +2,7 @@
 
 [![GitHub license](https://img.shields.io/github/license/MichalMazurek/aka_stats)](https://github.com/MichalMazurek/aka_stats/blob/main/LICENSE)
 [![Test/Lint](https://img.shields.io/github/workflow/status/MichalMazurek/aka_stats/Test%20code/main)](https://github.com/MichalMazurek/aka_stats/actions?query=workflow%3A%22Test+code%22)
-
+[![PyPI](https://img.shields.io/pypi/v/aka_stats)](https://pypi.org/project/aka-stats/)
 
 Aka (赤 - red in japanese) Stats.
 
