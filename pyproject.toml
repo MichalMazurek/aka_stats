@@ -1,8 +1,9 @@
 [tool.black]
 line-length = 120
+
 [tool.poetry]
 name = "aka-stats"
-version = "21.1.4"
+version = "21.2.5"
 description = "Module for keeping metrics about your application in Redis. The goal is to have an easy way to measure an application, and then expose these metrics through a HTTP API, either to process it in some web ui, or expose it to Prometheus."
 authors = ["Michal Mazurek <mazurek.michal@gmail.com>"]
 packages = [{include="aka_stats"}]
@@ -14,6 +15,9 @@ classifiers = [
 ]
 readme = "README.md"
 license = "MIT"
+
+[tool.poetry.plugins.pytest11]
+mock_stats = "aka_stats.testing"
 
 [tool.portray]
 modules = ["aka_stats"]

@@ -36,7 +36,6 @@ async def process_device(device_id: str):
         stats("task_done", next(t).stat, extra_labels={"device_id": device_id})
 ```
 
-
 ## Installation
 
 And add this package to your project:
@@ -56,3 +55,25 @@ Information how to write a formatter is here: [PrometheusFormatter.md](Prometheu
 ## Optional Standalone HTTP API
 
 Check out this guide here: [Included HTTP API](<Included http api.md>)
+
+## Pytest plugin
+
+This module is also a pytest plugin, providing a fixture `mock_stats` which collects stats instead of writing them
+to Redis.
+
+```python
+
+def test_something(mock_stats):
+    do_something()
+    assert mock_stats[0] == (1612550961, "test", 1, None)
+
+```
+
+And the module with function:
+
+```python
+
+def do_something():
+    with Stats() as stats:
+        stat("test", 1)
+```
